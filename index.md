@@ -2,7 +2,7 @@
 title: Hamilton Privacy Policy
 description: All your health data in one place. Garmin, Withings, Fitbit & more. 100% offline.
 ---
-
+# Hamilton Privacy Policy
 Last updated: July 2026
 
 Hamilton ("the app") is a read-only health data dashboard for Android.
