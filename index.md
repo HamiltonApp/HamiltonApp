@@ -3,7 +3,7 @@ title: Hamilton Privacy Policy
 description: All your health data in one place. Garmin, Withings, Fitbit & more. 100% offline.
 ---
 # Hamilton Privacy Policy
-Last updated: July 2026
+Last updated: August 2026
 
 Hamilton ("the app") is a read-only health data dashboard for Android.
 
@@ -66,7 +66,7 @@ You can revoke Hamilton's Health Connect permissions at any time through Android
 
 ## Background refresh (optional). 
 
-If you grant "Allow reading data in the background" in Health Connect, Hamilton periodically (roughly once per hour) reads your latest health data while the app is closed and stores it in the app's local cache on your device, so your dashboard is up to date when you open it. A notification is shown whenever this happens. This data is processed and stored only on your device — Hamilton has no internet access and never transmits your data anywhere. You can revoke this permission at any time in Health Connect settings, which stops all background reading.
+If you grant "Allow reading data in the background" in Health Connect, Hamilton periodically (roughly once per hour) reads your latest health data while the app is closed and stores it in the app's local cache on your device, so your dashboard is up to date when you open it. Hamilton posts a notification each time this happens, though your phone may not display it if Do Not Disturb or a similar mode is active. This data is processed and stored only on your device — Hamilton has no internet access and never transmits your data anywhere. You can revoke this permission at any time in Health Connect settings, which stops all background reading.
 
 ## Children's Privacy
 
