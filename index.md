@@ -64,6 +64,10 @@ Hamilton shares no data with any third party. Hamilton has no mechanism to share
 
 You can revoke Hamilton's Health Connect permissions at any time through Android Settings or the Health Connect app. You can also toggle individual metrics on or off within Hamilton's settings. To delete data Hamilton has stored, see "Data Deletion" above.
 
+## Background refresh (optional). 
+
+If you grant "Allow reading data in the background" in Health Connect, Hamilton periodically (roughly once per hour) reads your latest health data while the app is closed and stores it in the app's local cache on your device, so your dashboard is up to date when you open it. A notification is shown whenever this happens. This data is processed and stored only on your device — Hamilton has no internet access and never transmits your data anywhere. You can revoke this permission at any time in Health Connect settings, which stops all background reading.
+
 ## Children's Privacy
 
 Hamilton does not knowingly collect data from children under 13. The app has no account system and no way to identify any user's age.
