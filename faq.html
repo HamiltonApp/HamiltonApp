@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hamilton FAQ</title>
+<meta name="description" content="Questions about Hamilton, the no-internet Android health dashboard, answered by the app and by the dog.">
+<meta property="og:title" content="Hamilton FAQ">
+<meta property="og:description" content="Questions about Hamilton, the no-internet Android health dashboard, answered by the app and by the dog.">
+<meta property="og:image" content="https://hamiltonapp.github.io/HamiltonApp/hamilton.jpg">
+<meta property="og:url" content="https://hamiltonapp.github.io/HamiltonApp/faq.html">
+<meta property="og:type" content="website">
+<style>
+  :root {
+    --bg: #f7f6fb;
+    --card: #ffffff;
+    --text: #1d1b26;
+    --muted: #5c586b;
+    --accent: #534AB7;
+    --accent-text: #ffffff;
+    --dog: #8a5a2b;
+    --dog-text: #ffffff;
+    --border: #e4e1ef;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #121018;
+      --card: #1c1a25;
+      --text: #ecebf2;
+      --muted: #a9a5b8;
+      --accent: #8a82e6;
+      --accent-text: #121018;
+      --dog: #d19a62;
+      --dog-text: #121018;
+      --border: #2d2a3a;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    line-height: 1.55;
+  }
+  main { max-width: 720px; margin: 0 auto; padding: 32px 16px 48px; }
+  header {
+    display: flex; align-items: center; justify-content: space-between;
+    gap: 16px; margin-bottom: 24px;
+  }
+  h1 { font-size: 1.75rem; margin: 0 0 4px; }
+  .sub { color: var(--muted); margin: 0; }
+  .logo { flex: none; width: 72px; height: auto; }
+  a { color: var(--accent); }
+  .intro p { margin: 0 0 14px; }
+  .qa {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 16px 18px;
+    margin: 16px 0;
+  }
+  .qa h2 { font-size: 1.1rem; margin: 0 0 10px; }
+  .a { margin: 8px 0 0; display: flex; gap: 10px; align-items: baseline; }
+  .tag {
+    flex: none;
+    font-size: 0.75rem; font-weight: 700; letter-spacing: 0.04em;
+    padding: 2px 8px; border-radius: 999px;
+    background: var(--accent); color: var(--accent-text);
+  }
+  .dog .tag { background: var(--dog); color: var(--dog-text); }
+  .links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
+  .btn {
+    display: inline-block; padding: 12px 18px; border-radius: 999px;
+    text-decoration: none; font-weight: 600;
+    border: 1px solid var(--accent); color: var(--accent);
+  }
+  .btn.primary { background: var(--accent); color: var(--accent-text); }
+  .btn:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+  footer { margin-top: 32px; font-size: 0.875rem; color: var(--muted); }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <div>
+      <h1>Hamilton FAQ</h1>
+      <p class="sub">Answered by the app and by the dog</p>
+    </div>
+    <a href="https://play.google.com/store/apps/details?id=com.gads.hamilton"><img class="logo" src="logo.png" alt="Hamilton app logo" width="192" height="183"></a>
+  </header>
+
+  <div class="intro">
+    <p>I started experimenting with LLMs and decided I wanted to create a fitness app. My first thought was an app that disabled Google Pay every time my phone detected I was within 50m of a McDonald's.</p>
+    <p>However, I quickly pivoted like a true founder to create an app that addressed a personal issue of mine.</p>
+    <p>On Android, if you have a bunch of apps and fitness monitors from different manufacturers, very few of them all talk to each other. Your data is scattered across different apps or double counted. However, most data sources write to Health Connect.</p>
+    <p>Hamilton is a dashboard of your Health Connect data with a homepage that shows your key metrics at a glance. Your choice of data source is flexible to avoid double counting, and you can overlay and offset metrics on charts to view correlations and track progress over time.</p>
+    <p>I named the app after my dog, who occasionally fetches things and is responsible for my daily step count.</p>
+    <p>Below is an FAQ, and to avoid confusion I have helpfully labelled my responses [APP] or [DOG].</p>
+  </div>
+
+    <section class="qa">
+      <h2>Is Hamilton any good?</h2>
+      <p class="a app"><span class="tag">APP</span> <span>I think so - I use it daily.</span></p>
+      <p class="a dog"><span class="tag">DOG</span> <span>He is the absolute BEST BOY EVER</span></p>
+    </section>
+    <section class="qa">
+      <h2>Is Hamilton active in the background?</h2>
+      <p class="a app"><span class="tag">APP</span> <span>It fetches your data hourly from Health Connect if granted background access, and it works with Android battery saving rules.</span></p>
+      <p class="a dog"><span class="tag">DOG</span> <span>He's active in the background of my Zoom calls, mostly licking his bits</span></p>
+    </section>
+    <section class="qa">
+      <h2>Is Hamilton vibe-coded?</h2>
+      <p class="a app"><span class="tag">APP</span> <span>100% yes, but human-designed to fit my needs.</span></p>
+      <p class="a dog"><span class="tag">DOG</span> <span>Woof. (Translation pending – <a href="https://earthspecies.org/">earthspecies.org</a>)</span></p>
+    </section>
+    <section class="qa">
+      <h2>Is that unsafe? Will Hamilton delete data on my phone?</h2>
+      <p class="a app"><span class="tag">APP</span> <span>Everything is a read-only view on Health Connect, and the app has no internet permission. It can't delete your Health Connect data and it can't transmit data.</span></p>
+      <p class="a dog"><span class="tag">DOG</span> <span>No, but my cat jumped on my keyboard when I was in the middle of typing an insightful LinkedIn post and made me send RUBBISH to my THOUSANDS (20) followers</span></p>
+    </section>
+    <section class="qa">
+      <h2>Is Hamilton tested?</h2>
+      <p class="a app"><span class="tag">APP</span> <span>I've been using it daily and testing and refining it for months. I realise just typing this sentence means someone will find a critical bug the first time they run it and I will look like a FOOL.</span></p>
+      <p class="a dog"><span class="tag">DOG</span> <span>Only for tapeworm and parvo virus.</span></p>
+    </section>
+    <section class="qa">
+      <h2>Does Hamilton show all your data?</h2>
+      <p class="a app"><span class="tag">APP</span> <span>30+ metrics, everything except blood sugar and reproductive health</span></p>
+      <p class="a dog"><span class="tag">DOG</span> <span>The only data he gets is from sniffing lamp posts</span></p>
+    </section>
+    <section class="qa">
+      <h2>Do you eat your own dog food?</h2>
+      <p class="a app"><span class="tag">APP</span> <span>I use it every day to show my steps, body comp, workout sessions etc</span></p>
+      <p class="a dog"><span class="tag">DOG</span> <span>He does, but he would far rather eat whatever it is I have on my plate.</span></p>
+    </section>
+    <section class="qa">
+      <h2>What units does Hamilton use?</h2>
+      <p class="a app"><span class="tag">APP</span> <span>Metric, Imperial, and you can also configure per metric group to match the strange mix we have in the UK. No furlongs though.</span></p>
+      <p class="a dog"><span class="tag">DOG</span> <span>Approximately 6 urinations per 20m walked</span></p>
+    </section>
+    <section class="qa">
+      <h2>How much does Hamilton cost?</h2>
+      <p class="a app"><span class="tag">APP</span> <span>£3.59 (or local equivalent). I priced it to be approximately the same as a latte, which is my standard unit of measurement for impulse purchases.</span></p>
+      <p class="a dog"><span class="tag">DOG</span> <span>DO NOT REMIND ME. He was a lockdown puppy and I bought him at the top of the market (He's still worth every penny though)</span></p>
+    </section>
+    <section class="qa">
+      <h2>Does Hamilton have any recurring costs?</h2>
+      <p class="a app"><span class="tag">APP</span> <span>I hate apps with subscriptions, and no internet permission means no backend costs so the app is paid once</span></p>
+      <p class="a dog"><span class="tag">DOG</span> <span>Vets are crooks, is all I will say on this.</span></p>
+    </section>
+    <section class="qa">
+      <h2>Is there anything better than Hamilton?</h2>
+      <p class="a app"><span class="tag">APP</span> <span>There are other apps with full, backend API integration with the various fitness data sources, but some cost more per month than Hamilton does once</span></p>
+      <p class="a dog"><span class="tag">DOG</span> <span>ABSOLUTELY NOT</span></p>
+    </section>
+    <section class="qa">
+      <h2>Has Hamilton won any prizes?</h2>
+      <p class="a app"><span class="tag">APP</span> <span>Not yet</span></p>
+      <p class="a dog"><span class="tag">DOG</span> <span>Second in the Waggiest Tail Category at the Weald of Kent Ploughing Match. He was ROBBED.</span></p>
+    </section>
+    <section class="qa">
+      <h2>Are the metrics on the Play Store yours?</h2>
+      <p class="a app"><span class="tag">APP</span> <span>Absolutely not. I have 5% body fat, do 20,000 steps a day and have a resting heart rate of 12.</span></p>
+      <p class="a dog"><span class="tag">DOG</span> <span>Yes</span></p>
+    </section>
+
+  <div class="links">
+    <a class="btn primary" href="https://play.google.com/store/apps/details?id=com.gads.hamilton">Get the app on Google Play</a>
+    <a class="btn" href="dog.html">Meet Hamilton</a>
+    <a class="btn" href="./">Privacy policy</a>
+  </div>
+
+  <footer>This page loads nothing from anywhere else. No trackers, no cookies, no analytics.</footer>
+</main>
+</body>
+</html>
