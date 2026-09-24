@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hamilton (the dog)</title>
+<meta name="description" content="The dog behind Hamilton, the no-internet Android health dashboard.">
+<!-- Link previews (LinkedIn, Slack, WhatsApp etc.) -->
+<meta property="og:title" content="Hamilton (the dog)">
+<meta property="og:description" content="The dog behind Hamilton, the no-internet Android health dashboard.">
+<meta property="og:image" content="https://hamiltonapp.github.io/HamiltonApp/hamilton.jpg">
+<meta property="og:url" content="https://hamiltonapp.github.io/HamiltonApp/dog.html">
+<meta property="og:type" content="website">
+<style>
+  :root {
+    --bg: #f7f6fb;
+    --card: #ffffff;
+    --text: #1d1b26;
+    --muted: #5c586b;
+    --accent: #534AB7;
+    --accent-text: #ffffff;
+    --border: #e4e1ef;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #121018;
+      --card: #1c1a25;
+      --text: #ecebf2;
+      --muted: #a9a5b8;
+      --accent: #8a82e6;
+      --accent-text: #121018;
+      --border: #2d2a3a;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    line-height: 1.5;
+  }
+  main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 32px 16px 48px;
+  }
+  h1 {
+    font-size: 1.75rem;
+    margin: 0 0 4px;
+  }
+  .sub {
+    color: var(--muted);
+    margin: 0 0 24px;
+  }
+  figure {
+    margin: 0;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    overflow: hidden;
+  }
+  figure img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  figcaption {
+    padding: 14px 18px;
+    color: var(--muted);
+  }
+  .links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 24px;
+  }
+  .btn {
+    display: inline-block;
+    padding: 12px 18px;
+    border-radius: 999px;
+    text-decoration: none;
+    font-weight: 600;
+    border: 1px solid var(--accent);
+    color: var(--accent);
+  }
+  .btn.primary {
+    background: var(--accent);
+    color: var(--accent-text);
+  }
+  .btn:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+  footer {
+    margin-top: 32px;
+    font-size: 0.875rem;
+    color: var(--muted);
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>Hamilton</h1>
+  <!-- ✏️ YOUR WORDS: one line under the name, or delete this paragraph -->
+  <p class="sub">THE BEST BOY EVER</p>
+
+  <figure>
+    <!-- ✏️ Describe the photo for screen readers in the alt text -->
+    <img src="hamilton.jpg" alt="Hamilton the dog" width="1200" height="760">
+    <!-- ✏️ YOUR WORDS: a caption, or delete the figcaption line -->
+    <figcaption>Hamilton looking majestic</figcaption>
+  </figure>
+
+  <div class="links">
+    <a class="btn primary" href="https://play.google.com/store/apps/details?id=com.gads.hamilton">Get the app on Google Play</a>
+    <a class="btn" href="./">Privacy policy</a>
+  </div>
+
+  <footer>This page loads nothing from anywhere else. No trackers, no cookies, no analytics.</footer>
+</main>
+</body>
+</html>
