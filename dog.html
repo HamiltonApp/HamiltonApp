@@ -45,6 +45,19 @@
     margin: 0 auto;
     padding: 32px 16px 48px;
   }
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 24px;
+  }
+  header .sub { margin: 0; }
+  .logo {
+    flex: none;
+    width: 72px;
+    height: auto;
+  }
   h1 {
     font-size: 1.75rem;
     margin: 0 0 4px;
@@ -98,9 +111,14 @@
 </head>
 <body>
 <main>
-  <h1>Hamilton</h1>
-  <!-- ✏️ YOUR WORDS: one line under the name, or delete this paragraph -->
-  <p class="sub">THE BEST BOY EVER</p>
+  <header>
+    <div>
+      <h1>Hamilton</h1>
+      <!-- ✏️ YOUR WORDS: one line under the name, or delete this paragraph -->
+      <p class="sub">THE BEST BOY EVER</p>
+    </div>
+    <a href="https://play.google.com/store/apps/details?id=com.gads.hamilton"><img class="logo" src="logo.png" alt="Hamilton app logo" width="192" height="183"></a>
+  </header>
 
   <figure>
     <!-- ✏️ Describe the photo for screen readers in the alt text -->
